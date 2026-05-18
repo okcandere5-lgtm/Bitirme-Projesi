@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    container_name: bitirme_postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: projedb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: bitirme_rabbitmq
+    ports:
+      - "5672:5672"   # Kodların haberleşme portu
+      - "15672:15672" # Tarayıcıdan gireceğimiz yönetim paneli portu
+
+  redis:
+    image: redis:latest
+    container_name: bitirme_redis
+    ports:
+      - "6379:6379"
+
+volumes:
+  pg_data:
