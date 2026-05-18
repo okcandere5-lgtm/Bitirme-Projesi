@@ -3,7 +3,8 @@
 Bu proje, Next.js (Frontend), FastAPI (Backend), PostgreSQL (Veritabanı) ve RabbitMQ (Mesaj Kuyruğu) kullanılarak Microservice mimarisine uygun olarak geliştirilmiştir. Tüm altyapı Docker üzerinde çalışmaktadır.
 
 ## 🔗 GitHub Proje Linki
-[GitHub Repo Linkinizi Buraya Yapıştırın]
+(https://github.com/okcandere5-lgtm/Bitirme-Projesi)
+
 
 ## 🚀 Uygulama Erişim Linkleri (Docker Container)
 Tüm sistem `docker-compose up -d` komutu ile ayağa kaldırıldıktan sonra aşağıdaki linklerden projelere erişilebilir:
